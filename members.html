@@ -9,7 +9,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="shortcut icon" type="image/jpg" href="/assets/minimal-mistakes/loam_logo.jpg"/>
+ 
   
   <link rel="stylesheet" href="/css/franklin.css">
 <link rel="stylesheet" href="/css/minimal-mistakes.css">
@@ -34,28 +36,28 @@
   <!-- end custom head snippets -->
 </head>
 <body class="layout--single">
-  <div class="masthead">
-    <div class="masthead__inner-wrap">
-      <div class="masthead__menu">
-        <nav id="site-nav" class="greedy-nav">
-          <a class="site-title" href="/">Home</a>
-          <ul class="visible-links">
-            <li class="masthead__menu-item"><a href="/aboutLab/" >About the Lab</a></li>
-            <li class="masthead__menu-item"><a href="/members/" >Lab Members</a></li>
-            <li class="masthead__menu-item"><a href="/news/" >News</a></li>
-            <li class="masthead__menu-item"><a href="/publications/" >Publications</a></li>
-            <li class="masthead__menu-item"><a href="/contact/" >Contact us</a></li>
-            <!--<li class="masthead__menu-item"><a href="/menu3/">Tags</a></li> -->
-          </ul>
-          <button class="greedy-nav__toggle hidden" type="button">
-            <span class="visually-hidden">Toggle menu</span>
-            <div class="navicon"></div>
-          </button>
-          <ul class="hidden-links hidden"></ul>
-        </nav>
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+          <div class="masthead__menu">
+            <nav id="site-nav" class="greedy-nav">
+              <a class="site-title" href="/">Home</a>
+              <ul class="visible-links">
+                <li class="masthead__menu-item"><a href="/aboutLab/" >About the Lab</a></li>
+                <li class="masthead__menu-item"><a href="/members/" >Lab Members</a></li>
+                <li class="masthead__menu-item"><a href="/news/" >News</a></li>
+                <li class="masthead__menu-item"><a href="/publications/" >Publications</a></li>
+                <li class="masthead__menu-item"><a href="/contact/" >Contact us</a></li>
+                <!--<li class="masthead__menu-item"><a href="/menu3/">Tags</a></li> -->
+              </ul>
+              <button class="greedy-nav__toggle hidden" type="button">
+                <span class="visually-hidden">Toggle menu</span>
+                <div class="navicon"></div>
+              </button>
+              <ul class="hidden-links hidden"></ul>
+            </nav>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
 <div class="initial-content">
   <div id="main" role="main">
@@ -84,7 +86,6 @@
     </div>
 
 
-
 <!-- Content appended here -->
 <div class="franklin-content">
 <div style="margin-top: 40px; font-size: 40px; text-align: center;">
@@ -92,68 +93,76 @@
   <br>
 
   <div style="font-weight: bold;">
-    News
+    Meet our Lab Members
   </div>
 
-  <h2 id="summary"><a href="#summary" class="header-anchor">Summary</a></h2>
+  <h2 id="faculty"><a href="#faculty" class="header-anchor"> <center> Faculty </center></a></h2>
 
   <style>
-  .grid { display: grid; grid-template-rows: repeat(auto-fill, 1fr); grid-gap: 0rem; } .grid > h2, .grid > p { background: #f2f2f2; padding: 0.5rem 0.5rem 1rem 0.5rem; font-size: 0.7em; line-height: 1.1em; border-radius: 5px; text-align:justify;} .grid > p a { display: block; padding-bottom: 0.5em; } 
+    .grid { display: grid; grid-template-rows: repeat(auto-fill, 1fr); grid-gap: 0rem; } .grid > h2, .grid > p { background: #f2f2f2b6; padding: 0.5rem 0.5rem 1rem 0.5rem; font-size: 0.7em; line-height: 1.1em; border-radius: 5px; text-align:justify;} .grid > p a { display: block; padding-bottom: 0.5em; } 
   </style>
 
 <style>
-  .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  position: relative;
-  background: #74717142;
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+    background: #74717142;
+    
+  }
+    
+  .text {
+    
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+  }
+
+  .text-list {
+    margin-left: 0cm;
+    position: absolute;
+    font-size: 20px;
+    text-align: justify;
+    left: 50%;
+    transform: translate(-50%);
+    
+  }
+    </style>
+
   
-}
+    <div class="container">
+
+        <div class="image" style="padding: 3rem 0.5rem 3rem 0.5rem;;">
+
+            <img src="/assets/minimal-mistakes/foto_andre.jpg" alt="" style="float: left;  width:80%">
+
+        </div>
+
+        <div class="text">
+            <h2 style="text-align: center; margin-left: 5cm; margin-top: 0cm;">Lab Head</h2>
+
+            <ul style="text-align: justify; margin-left: 1cm; margin-bottom: 0cm; margin-right: -3cm;">
+                <li>Assistant Professor at the University of Campinas (UNICAMP).</li> 
+                <li>Lead of <a href="https://osipi.org/task-force-6-1/">Task Force 6.1</a> of the Open Science Initiative for Perfusion Imaging (<a href="https://osipi.org/">OSIPI</a>).</li>
+                <li>Detailed personal information <a href="/personal/">here</a></li>
+            </ul> 
+            <div class="page__footer-follow" style="margin-top: 0.5cm;margin-left: 0.5cm; margin-right: -3cm;">
+                <ul class="social-icons">
+                    <li><a href="mailto:andremp@unicamp.br" rel="nofollow noopener noreferrer"><i class="fa fa-envelope" aria-hidden="true"></i>  Email</a>
+                    <li><a href="https://twitter.com/paschoal_am" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+                    <li><a href="https://orcid.org/0000-0001-8269-711X" rel="nofollow noopener noreferrer"><img style="vertical-align:middle;position: relative;margin-top:-5px;display:inline;height:21px;width:21px" src="/assets/minimal-mistakes/orcid.png"> Orcid</a></li>
+                    <li><a href="http://lattes.cnpq.br/3723127817258341" rel="nofollow noopener noreferrer"> <img style="vertical-align:middle;position: relative;margin-top:-5px;display:inline;height:21px;width:21px" src="/assets/minimal-mistakes/lattes.png"> Lattes</a></li>
+                </ul>
+            </div> 
+        </div><!-- closure of class text -->
+    </div><!-- closure of container -->
   
-.text {
-  
-  position: absolute;
-  font-size: 20px;
-  text-align: center;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  
-}
-
-.text-list {
-  margin-left: 0cm;
-  position: absolute;
-  font-size: 20px;
-  text-align: justify;
-  left: 50%;
-  transform: translate(-50%);
-  
-}
-  </style>
-
-
-  <div class="container">
-
-      <div class="image" style="padding: 5rem 0.5rem 4rem 0.5rem;;">
-
-          <img src="/assets/minimal-mistakes/loamLogo_bkg.png" alt="" style="float: left;  width:45%; margin-left: -1.1cm;">
-
-      </div>
-
-      <div class="text">
-          <h2 style="text-align: center; margin-left: 3cm; margin-top: 0.5cm;">The LOAM is live!</h2>
-
-          <p style="margin-left: 1cm; margin-right: -3cm; text-align: justify;">
-              We are happy to announce the start of the activities in the Lab of Advanced MRI (LOAM)! But of course, a Lab is not made of a single 
-              person, and therefore we invite you to visit us to drink a good coffee and learn more about our aims, the researches that we will
-              develop here and the opportunities that we can offer now. So please, <b>spread the world about us!</b>
-
-          </p> 
-      </div><!-- closure of class text -->
-  </div><!-- closure of container -->
 
 
 </div>
