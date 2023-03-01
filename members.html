@@ -105,66 +105,121 @@
   </style>
 
 <style>
-    .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    position: relative;
-    background: #74717142;
-    
-  }
-    
-  .text {
-    
-    position: absolute;
-    font-size: 20px;
-    text-align: center;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    
-  }
 
-  .text-list {
-    margin-left: 0cm;
-    position: absolute;
-    font-size: 20px;
-    text-align: justify;
-    left: 50%;
-    transform: translate(-50%);
+    .wrapper{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      position: relative;
+      background: #74717142;
+      
     
-  }
+    }
+    
+    .text {
+    
+      position: relative;
+      font-size: 20px;
+      text-align: justify;
+      left: 30%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      
+    }
+
+    .image{
+      display: flex;
+      position: relative;
+      padding: 3rem 0.5rem 3rem 0.5rem;
+      width: 50%;
+    }
+
+    .links li {
+      display: inline-block;
+      padding-top: 5px;
+      padding-left: 5px;
+      padding-bottom: 5px;
+      font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+      font-size: 0.75em;
+      text-transform: uppercase;
+    }
+
+    .text-list {
+      margin-left: 0cm;
+      position: absolute;
+      font-size: 20px;
+      text-align: justify;
+      left: 50%;
+      transform: translate(-50%);
+      
+    }
+
+    @media(max-width= 200px){
+      .container{
+        height: 5000px;
+      }
+
+      .text{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .image{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .links{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+    }
+  
     </style>
 
-  
-    <div class="container">
+    <div class="wrapper">
+      <div class="container">
 
-        <div class="image" style="padding: 3rem 0.5rem 3rem 0.5rem;;">
+          <div class="image">
 
-            <img src="/assets/minimal-mistakes/foto_andre.jpg" alt="" style="float: left;  width:80%">
+              <img src="/assets/minimal-mistakes/foto_andre.jpg" alt="" style="float: left;  width:80%">
 
-        </div>
+          </div>
 
-        <div class="text">
-            <h2 style="text-align: center; margin-left: 5cm; margin-top: 0cm;">Lab Head</h2>
+          <div class="text">
+              <h2 style="text-align: center;">Lab Head</h2>
 
-            <ul style="text-align: justify; margin-left: 1cm; margin-bottom: 0cm; margin-right: -3cm;">
-                <li>Assistant Professor at the University of Campinas (UNICAMP).</li> 
-                <li>Lead of <a href="https://osipi.org/task-force-6-1/">Task Force 6.1</a> of the Open Science Initiative for Perfusion Imaging (<a href="https://osipi.org/">OSIPI</a>).</li>
-                <li>Detailed personal information <a href="/personal/">here</a></li>
-            </ul> 
-            <div class="page__footer-follow" style="margin-top: 0.5cm;margin-left: 0.5cm; margin-right: -3cm;">
-                <ul class="social-icons">
-                    <li><a href="mailto:andremp@unicamp.br" rel="nofollow noopener noreferrer"><i class="fa fa-envelope" aria-hidden="true"></i>  Email</a>
-                    <li><a href="https://twitter.com/paschoal_am" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-                    <li><a href="https://orcid.org/0000-0001-8269-711X" rel="nofollow noopener noreferrer"><img style="vertical-align:middle;position: relative;margin-top:-5px;display:inline;height:21px;width:21px" src="/assets/minimal-mistakes/orcid.png"> Orcid</a></li>
-                    <li><a href="http://lattes.cnpq.br/3723127817258341" rel="nofollow noopener noreferrer"> <img style="vertical-align:middle;position: relative;margin-top:-5px;display:inline;height:21px;width:21px" src="/assets/minimal-mistakes/lattes.png"> Lattes</a></li>
-                </ul>
-            </div> 
-        </div><!-- closure of class text -->
-    </div><!-- closure of container -->
-  
+              <ul>
+                  <li>Assistant Professor at the University of Campinas (UNICAMP).</li> 
+                  <li>Lead of <a href="https://osipi.org/task-force-6-1/">Task Force 6.1</a> of the Open Science Initiative for Perfusion Imaging (<a href="https://osipi.org/">OSIPI</a>).</li>
+                  <li>Detailed personal information <a href="/personal/">here</a></li>
+              </ul> 
+              <div class="links">
+                  <ul class="social-icons">
+                      <li><a href="mailto:andremp@unicamp.br" rel="nofollow noopener noreferrer"><i class="fa fa-envelope" aria-hidden="true"></i>  Email</a>
+                      <li><a href="https://twitter.com/paschoal_am" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+                      <li><a href="https://orcid.org/0000-0001-8269-711X" rel="nofollow noopener noreferrer"><img style="vertical-align:middle;position: relative;margin-top:-5px;display:inline;height:21px;width:21px" src="/assets/minimal-mistakes/orcid.png"> Orcid</a></li>
+                      <li><a href="http://lattes.cnpq.br/3723127817258341" rel="nofollow noopener noreferrer"> <img style="vertical-align:middle;position: relative;margin-top:-5px;display:inline;height:21px;width:21px" src="/assets/minimal-mistakes/lattes.png"> Lattes</a></li>
+                  </ul>
+              </div> 
+          </div><!-- closure of class text -->
+      </div><!-- closure of container -->
+    </div>
 
 
 </div>
